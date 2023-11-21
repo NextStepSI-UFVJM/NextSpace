@@ -1,0 +1,13 @@
+.main {
+    color: white;
+    position: absolute;
+    width: 100vw;
+    height: 629px;
+    background-color:#A1B512;
+    top: 0; 
+    left: 0; 
+}
+
+p {
+    color: white ;
+}
