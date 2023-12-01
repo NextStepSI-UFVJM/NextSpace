@@ -1,1 +1,25 @@
-<h1> teste 1</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teste</title>
+</head>
+<body>
+
+  {% for midia in midias_publicadas %}
+    {{ midia.Categoria }}<br />
+    {{ midia.Legenda }}<br />
+    {{ midia.Autor }}<br />
+    {{ midia.Curtidas }} Curtidas<br />
+    {{ midia.Data_de_publicacao }}<br />
+
+    <div>
+      {% if midia.Imagem %}
+        <img src="midia.Imagem.url" alt="{{ midia.Legenda }}">
+      {% endif %}
+    </div>
+
+    <p>__________________________________________________</p><br />
+  {% endfor %}
+
+</body>
+</html>
